@@ -1,7 +1,7 @@
 <p>
   company works!
 </p>
-<!-- <table>
+<table>
   <div id="headings">
     <tr>
       <td>Name</td>
@@ -9,29 +9,12 @@
       <td>qualification</td>
     </tr>
   </div>
-  <div id="tab" *ngFor="let post of title | async">
+  <div id="tab" *ngFor="let post of student | async">
     <tr>
       <p>{{post.name}}</p>
       <td>{{post.cgpa}}</td>
       <td>{{post.qualification}}</td>
     </tr>
   </div>
-</table> -->
-<table>
-  <div id="headings">
-
-   <tr>
-    <td>Name</td>
-    <td>qualification</td>
-    <td>cgpa</td>
-  </tr>
-  </div>
-
-  <div id="tab" *ngFor="let post of title | async">
-    <tr>
-      <td>{{post.name}}</td>
-      <td>{{post.qualification}}</td>
-      <td>{{post.cgpa}}</td>
-    </tr>
-  </div>
 </table>
+<button (click)="signout()">logout</button>

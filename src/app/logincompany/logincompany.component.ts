@@ -12,15 +12,13 @@ export class LogincompanyComponent implements OnInit {
   password;
   constructor(private _service: DataService, private db: AngularFireDatabase) {
 
-    this.company = db.list("/companydata", {
-    });
   }
 
 
   ngOnInit() {
   }
-
-  login() {
-    this._service.login(this.email, this.password)
+login(){
+    this._service.login(this.email,this.password);    
   }
+ 
 }

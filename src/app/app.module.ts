@@ -13,12 +13,12 @@ import { StudentComponent } from './student/student.component';
 import { CompanyComponent } from './company/company.component';
 import { LogincompanyComponent } from './logincompany/logincompany.component';
 
-
 const routes: Routes = [
   { path: 'signup', component: SignupComponent },
   { path: 'studentlogin', component: LoginComponent },
   { path: 'student', component: StudentComponent },
-  { path: 'companylogin', component: CompanyComponent }
+  { path: 'companylogin', component: LogincompanyComponent },
+  { path: 'company' ,component: CompanyComponent}
 ];
 
 export const config = {
@@ -51,4 +51,4 @@ export const config = {
   providers: [DataService, StudentComponent, CompanyComponent],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule { }

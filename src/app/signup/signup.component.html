@@ -1,10 +1,14 @@
 <div>
-    <form (ngSubmit)="signup()">
-        <input type="text" placeholder="name" name="text" [(ngModel)]="name">
-        <input type="text" placeholder="email" name="text" [(ngModel)]="email">
-        <input type="password" placeholder="password" name="password" [(ngModel)]="password">
+      <form (ngSubmit)="signup()">
+        <input type="text" placeholder="name" name="text" [(ngModel)]="name"><br>
+        <input type="text" placeholder="email" name="text" [(ngModel)]="email"><br>
+        <input type="password" placeholder="password" name="password" [(ngModel)]="password"><br>
         <input type="radio" name="rad" value="student" [(ngModel)]="type">student
-        <input type="radio" name="rad" value="company" [(ngModel)]="type">company
+        <input type="radio" name="rad" value="company" [(ngModel)]="type">company<br>
         <input type="submit" name="submit" value="register" [disabled]="!email || !password || !type">
-    </form>
+        
+    </form>  
+
+
+
 </div>
