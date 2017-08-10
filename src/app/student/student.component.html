@@ -1,0 +1,31 @@
+<p>
+  student works!
+</p>
+<form [formGroup]="form" (ngSubmit)="submit()">
+  <input type="text" placeholder="Name" formControlName="name">
+  <input type="text" placeholder="Email" formControlName="qualification">
+  <textarea placeholder="Qualification" formControlName="cgpa">
+  </textarea>
+  <button type="submit">submit</button>
+</form>
+<table>
+  <div id="headings">
+
+   <tr>
+    <td>Name</td>
+    <td>qualification</td>
+    <td>cgpa</td>
+  </tr>
+  </div>
+
+  <div id="tab" *ngFor="let post of items | async">
+    <tr>
+      <td>{{post.name}}</td>
+      <td>{{post.qualification}}</td>
+      <td>{{post.cgpa}}</td>
+    </tr>
+  </div>
+</table>
+
+<button (click)="signout()">signout</button>
+
